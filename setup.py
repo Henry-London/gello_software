@@ -1,6 +1,9 @@
+import os
+
 import setuptools
 
-with open("README.md", "r") as fh:
+_here = os.path.dirname(os.path.abspath(__file__))
+with open(os.path.join(_here, "README.md"), "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
